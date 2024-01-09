@@ -1,13 +1,11 @@
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+  return 
     <>
       <h1>Hello World Vite-React</h1>
     </>
-  )
+
 }
 
 export default App
