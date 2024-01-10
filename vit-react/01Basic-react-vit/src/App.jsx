@@ -1,9 +1,9 @@
-
+import Project from './Project'
 import React from 'react'
 function App() {
   return (
     
-      <h1>Hello World Vite-React</h1>
+      <Project/>
   )
 }
 
