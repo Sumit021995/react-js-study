@@ -6,5 +6,10 @@ function Project() {
     </> 
   )
 }
+function MyName(){
+    return <h1>Sumit Saurav</h1>
 
-export default Project
+}
+
+// export default Project
+export default MyName
