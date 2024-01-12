@@ -9,7 +9,8 @@ const reactElement = {
     props: {
         href:"https://google.com",
         target: '_blank'
-    }
+    },
+    children:"Click me to visit Google"
 
 }
 
