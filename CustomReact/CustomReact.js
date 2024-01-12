@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+function customRender(reactElement,container){
+    
+}
 
 const mainContainer = ReactDOM.createReact(document.getElementById('root'))
 root.render(
