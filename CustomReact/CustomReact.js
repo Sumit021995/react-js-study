@@ -6,7 +6,11 @@ function customRender(reactElement,container){
 
 const reactElement = {
     type: 'a',
-    
+    props: {
+        href:"https://google.com",
+        target: '_blank'
+    }
+
 }
 
 const mainContainer = ReactDOM.createReact(document.getElementById('root'))
