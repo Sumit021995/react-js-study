@@ -4,6 +4,11 @@ function customRender(reactElement,container){
     domElement
 }
 
+const reactElement = {
+    type: 'a',
+    
+}
+
 const mainContainer = ReactDOM.createReact(document.getElementById('root'))
 root.render(
 <>
