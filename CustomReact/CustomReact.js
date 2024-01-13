@@ -15,9 +15,11 @@ const reactElement = {
 
 }
 
-const mainContainer = ReactDOM.createReact(document.getElementById('root'))
-root.render(
-<>
-    <h1>Sumit</h1>
-</>
-);
+const mainContainer = document.getElementById('root')
+
+// const mainContainer = ReactDOM.createReact(document.getElementById('root'))
+// root.render(
+// <>
+//     <h1>Sumit</h1>
+// </>
+// );
