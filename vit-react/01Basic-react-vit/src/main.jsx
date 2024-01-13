@@ -9,12 +9,15 @@ function MyApp(){
   );
 }
 
+// MyApp() also work but that is not correct for optimization
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
   <App />
   <MyName/>
   <MyApp/>
+   MyApp() 
 
   </>
     
