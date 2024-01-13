@@ -7,7 +7,13 @@ const customRender = function (reactElement,container){
     // domElement.setAttribute("target",reactElement.props.target)
 
     // container.appendChild(domElement)
-    
+    for (const prop in props) {
+        if (prop == children) continue;
+        domElement.setAttribute(prop,reactElement.props[prop])    
+            
+        
+    }
+
 }
 
 // A Simple not Standard React Element
