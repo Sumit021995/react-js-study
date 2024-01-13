@@ -22,6 +22,8 @@ const reactElement = {
 
 const mainContainer = document.getElementById('root')
 
+customRender(reactElement,mainContainer)
+
 // const mainContainer = ReactDOM.createReact(document.getElementById('root'))
 // root.render(
 // <>
