@@ -1,7 +1,8 @@
-function customRender(reactElement,container){
-    const domElement = document.createElement
-    (reactElement.type)
-    domElement
+let customRender = function (reactElement,container){
+    const domElement = document.createElement(reactElement.type);
+    domElement.innerHTML = reactElement.children;
+    
+
 }
 
 // A Simple not Standard React Element
