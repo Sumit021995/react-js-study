@@ -4,8 +4,9 @@ function customRender(reactElement,container){
     domElement
 }
 
+// A Simple not Standard React Element
 const reactElement = {
-    type: 'a',
+    type: 'a', // a tag
     props: {
         href:"https://google.com",
         target: '_blank'
