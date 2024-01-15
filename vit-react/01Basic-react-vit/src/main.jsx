@@ -9,15 +9,15 @@ function MyApp(){
   );
 }
 
-const reactElement = {
-  type: 'a', // a tag
-  props: {
-      href:"https://google.com",
-      target: '_blank'
-  },
-  children:"Click me to visit Google"
+// const reactElement = {
+//   type: 'a', // a tag
+//   props: {
+//       href:"https://google.com",
+//       target: '_blank'
+//   },
+//   children:"Click me to visit Google"
 
-}
+// }
 
 const anotherUser = "chai aur react"
 
