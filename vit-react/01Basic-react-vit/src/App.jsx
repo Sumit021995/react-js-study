@@ -4,7 +4,7 @@ function App() {
   const username = 'Sumit'
   return (
     
-      <h1>Hello World Vite-React</h1>
+      <h1>Hello World Vite-React {username}</h1>
   )
 }
 
