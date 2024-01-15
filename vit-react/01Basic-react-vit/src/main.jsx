@@ -27,8 +27,8 @@ const anotherUser = "chai aur react"
 const reactElement = React.createElement(
     'a', // tag
     {href: 'https://google.com',target: '_blank' }, // properties or say attribute
-    'click me to visit google',
-    anotherElement
+    'click me to visit google', // text or say string
+    
 )
 
 
