@@ -19,6 +19,10 @@ const reactElement = {
 
 }
 
+const anotherElement = (
+  <a href="https://google.com" target='_blank'>Visit google</a>
+)
+
 // MyApp() also work but that is not correct for optimization
 
 
