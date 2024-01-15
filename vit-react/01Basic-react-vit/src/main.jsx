@@ -37,11 +37,7 @@ const anotherElement = (
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-  <App />
-  <MyName/>
-  <MyApp/>
-   MyApp() 
-
+  reactElement
   </>
     
 )
