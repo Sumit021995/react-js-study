@@ -18,6 +18,9 @@ function MyApp(){
 //   children:"Click me to visit Google"
 
 // }
+const anotherElement = (
+  <a href="https://google.com" target='_blank'>Visit google</a>
+)
 
 const anotherUser = "chai aur react"
 
@@ -28,16 +31,11 @@ const reactElement = React.createElement(
     anotherElement
 )
 
-const anotherElement = (
-  <a href="https://google.com" target='_blank'>Visit google</a>
-)
 
 // MyApp() also work but that is not correct for optimization
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
-  reactElement
-  </>
+  anotherElement
     
 )
