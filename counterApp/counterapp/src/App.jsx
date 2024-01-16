@@ -4,13 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let count = 
+  let count = 1
 
   return (
     <>
       <div>
         <h1>Sumit , Vite-React , Counter App</h1>
         <h2>Counter Value: {count}</h2>
+
+        <button>Add Value</button>
+        <br/>
+        <button>Subtract Value</button>
 
 
       </div>
