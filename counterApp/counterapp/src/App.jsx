@@ -11,6 +11,7 @@ function App() {
     setCount(count)
   }
  function SubValue (){
+  if(!count) return;
     count--
     setCount(count)
   }
