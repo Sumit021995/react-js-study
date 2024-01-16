@@ -4,15 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let [countAdd,setCountAdd]=useState(0)
-  let [countSub,setCountSub] = useState(0)
+  let [count,setCount]=useState(0)
+  
   function addValue(){
-    countAdd++;
-    setCountAdd(countAdd)
+    count++;
+    setCount(count)
   }
  function SubValue (){
-    countSub--
-    setCountSub(countSub)
+    count--
+    setCount(count)
   }
   
 
@@ -22,9 +22,11 @@ function App() {
         <h1>Sumit , Vite-React , Counter App</h1>
         <h2>Counter Value: </h2>
 
-        <button onClick={addValue}>Add Value {countAdd}</button>
+        <button onClick={addValue}>Add Value</button>
         <br/>
-        <button onClick = {SubValue}>Subtract Value {countSub}</button>
+        <h2>{count}</h2>
+        <br/>
+        <button onClick = {SubValue}>Subtract Value</button>
 
 
       </div>
