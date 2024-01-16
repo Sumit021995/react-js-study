@@ -5,6 +5,7 @@ function App() {
   let [count,setCount]=useState(0)
   
   function addValue(){
+    if(count >= 20) return;
     count++;
     setCount(count)
   }
