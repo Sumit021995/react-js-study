@@ -8,6 +8,9 @@ function App() {
   function addValue(){
     count++;
   }
+ function SubValue (){
+    count--
+  }
   
 
   return (
@@ -16,9 +19,9 @@ function App() {
         <h1>Sumit , Vite-React , Counter App</h1>
         <h2>Counter Value: {count}</h2>
 
-        <button onClick={addValue}>Add Value</button>
+        <button onClick={addValue}>Add Value {count}</button>
         <br/>
-        <button>Subtract Value</button>
+        <button onClick = {SubValue}>Subtract Value {count}</button>
 
 
       </div>
