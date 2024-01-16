@@ -5,6 +5,9 @@ import './App.css'
 
 function App() {
   let count = 1;
+  function addValue(){
+    count++;
+  }
   
 
   return (
@@ -13,7 +16,7 @@ function App() {
         <h1>Sumit , Vite-React , Counter App</h1>
         <h2>Counter Value: {count}</h2>
 
-        <button onClick={count}>Add Value</button>
+        <button onClick={addValue}>Add Value</button>
         <br/>
         <button>Subtract Value</button>
 
