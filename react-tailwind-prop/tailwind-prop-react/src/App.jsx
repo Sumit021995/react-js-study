@@ -1,6 +1,6 @@
 
 import './App.css'
-import './assets/sumit.jpeg'
+
 
 function App() {
 
