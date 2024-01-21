@@ -9,25 +9,8 @@ function App() {
     <>
       <h1 className='bg-green-400 text-orange-200 p-4 m-4 rounded-xl' >Sumit Saurav</h1>
       <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-  <img  src={sumit} alt="Sumit" className='rounded-xl' width="245" height="450"/>
-  <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
-    <blockquote>
-      <p className="text-lg font-medium">
-        “A Full Stack Web Developer | A Passionate Web3 enthusiast | AlmaBetter Pro Member”
-      </p>
-    </blockquote>
-    <figcaption className="font-medium">
-      <div className="text-sky-500 dark:text-sky-400">
-        Sumit Saurav
-      </div>
-      <div className="text-slate-700 dark:text-slate-500">
-        Mechanical  Engineer
-      </div>
-    </figcaption>
-  </div>
-</figure>
-<div className="relative h-[400px] w-[300px] rounded-md">
-  <img
+      <div className="relative h-[400px] w-[300px] rounded-md">
+  <img width="245" height="450"
     src={sumit}
     alt="AirMax Pro"
     className="z-0 h-full w-full rounded-xl object-cover"
@@ -44,6 +27,23 @@ function App() {
     </button>
   </div>
 </div>
+  <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+    <blockquote>
+      <p className="text-lg font-medium">
+        “A Full Stack Web Developer | A Passionate Web3 enthusiast | AlmaBetter Pro Member”
+      </p>
+    </blockquote>
+    <figcaption className="font-medium">
+      <div className="text-sky-500 dark:text-sky-400">
+        Sumit Saurav
+      </div>
+      <div className="text-slate-700 dark:text-slate-500">
+        Mechanical  Engineer
+      </div>
+    </figcaption>
+  </div>
+</figure>
+
 
 
     </>
