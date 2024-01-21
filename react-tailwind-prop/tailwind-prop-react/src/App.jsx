@@ -9,8 +9,8 @@ function App() {
     <>
       <h1 className='bg-green-400 text-orange-200 p-4 m-4 rounded-xl' >Sumit Saurav</h1>
       <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-      <div className="relative h-[400px] w-[300px] rounded-md">
-  <img width="245" height="450"
+      <div className="relative h-[300px] w-[300px] rounded-md">
+  <img
     src={sumit}
     alt="AirMax Pro"
     className="z-0 h-full w-full rounded-xl object-cover"
