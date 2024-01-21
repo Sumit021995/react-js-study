@@ -19,8 +19,7 @@ function App() {
   <div className="absolute bottom-4 left-4 text-left">
     <h1 className="text-lg font-semibold text-white">Delba</h1>
     <p className="mt-2 text-sm text-gray-300">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-      debitis?
+    “A Full Stack Web Developer | A Passionate Web3 enthusiast | AlmaBetter Pro Member”
     </p>
     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
       View Profile →
@@ -30,7 +29,9 @@ function App() {
   <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
     <blockquote>
       <p className="text-lg font-medium">
-        “A Full Stack Web Developer | A Passionate Web3 enthusiast | AlmaBetter Pro Member”
+      "Aiming to achieve a challenging & successful career where i can make a significant contribution using my 
+innovative ideas , knowledge ,  skills and experience with the objective of development & growth of the organization "
+        
       </p>
     </blockquote>
     <figcaption className="font-medium">
