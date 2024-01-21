@@ -28,7 +28,7 @@ function App() {
 </div>
   <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
     <blockquote>
-      <p className="text-lg font-medium">
+      <p className="text-md font-medium">
       "Aiming to achieve a challenging & successful career where i can make a significant contribution using my 
 innovative ideas , knowledge ,  skills and experience" 
       </p>
