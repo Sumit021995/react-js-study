@@ -19,7 +19,7 @@ function App() {
   <div className="absolute bottom-4 left-4 text-left">
     <h1 className="text-lg font-semibold text-white">Sumit Saurav</h1>
     <p className="mt-2 text-sm text-gray-300">
-    “A Full Stack Web Developer | A Passionate Web3 enthusiast | AlmaBetter Pro Member”
+    “A Full Stack Web Developer ”
     </p>
     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
       View Profile →
