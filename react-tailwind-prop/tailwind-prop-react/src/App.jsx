@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1 className='bg-green-400 text-orange-200 p-4 m-4 rounded-xl' >Tailwind Test</h1>
+      <h1 className='bg-green-400 text-orange-200 p-4 m-4 rounded-xl' >Sumit Saurav</h1>
       <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
   <img  src={sumit} alt="Sumit" className='rounded-xl' width="245" height="450"/>
   <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
