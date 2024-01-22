@@ -34,7 +34,7 @@ function App() {
         <button onClick = {SubValue}>Subtract Value</button>
         <h2>Counter Value: {count}</h2>
         <br/>
-        <button onClick = {SubValue}>Subtract Value</button>
+        <button onClick = {AddTwo}>Add Two Value</button>
 
 
       </div>
