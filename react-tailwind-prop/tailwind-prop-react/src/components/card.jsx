@@ -2,7 +2,7 @@
 import React from 'react'
 // import  sumit from '../assets/sumit.jpeg'
 
-function Card({myImg}) {
+function Card({myImg,username,text,btnText="Visit Me"}) {
     // console.log(props);
   return (
     
@@ -14,13 +14,13 @@ function Card({myImg}) {
   />
   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
   <div className="absolute bottom-4 left-4 text-left">
-    <h1 className="text-lg font-semibold text-white">Delba</h1>
+  
+    <h1 className="text-lg font-semibold text-white">{username}</h1>
     <p className="mt-2 text-sm text-gray-300">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-      debitis?
+      {text}
     </p>
     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-      View Profile →
+      {btnText} →
     </button>
   </div>
 </div>
