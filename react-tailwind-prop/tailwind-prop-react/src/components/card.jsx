@@ -8,7 +8,7 @@ function Card(props) {
     
       <div className=" mx-auto relative h-[400px] w-[300px] rounded-md">
   <img
-    src={sumit}
+    src={props.myImg}
     alt="AirMax Pro"
     className="z-0 h-full w-full rounded-md object-cover"
   />
