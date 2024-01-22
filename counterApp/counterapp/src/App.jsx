@@ -26,13 +26,12 @@ function App() {
       <div>
         <h1>Sumit , Vite-React , Counter App</h1>
         
-
         <button onClick={addValue}>Add Value</button>
         <br/>
-        <h2>Counter Value: {count}</h2>
+        
         <br/>
         <button onClick = {SubValue}>Subtract Value</button>
-        <h2>Counter Value: {count}</h2>
+        
         <br/>
         <button onClick = {AddTwo}>Add Two Value</button>
 
