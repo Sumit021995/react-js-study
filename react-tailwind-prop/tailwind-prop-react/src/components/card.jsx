@@ -1,6 +1,6 @@
 // rfce Enter = react functional component export shortcut key (required react snipit)
-import React from 'react'
-import  sumit from '../assets/sumit.jpeg'
+// import React from 'react'
+// import  sumit from '../assets/sumit.jpeg'
 
 function Card(props) {
     console.log(props);
