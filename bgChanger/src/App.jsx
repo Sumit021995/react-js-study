@@ -10,8 +10,8 @@ function App() {
       style={{backgroundColor:color}}
       >
       <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2 '>
-      <div className="flex flex-wrap p-3 m-2 bg-white justify-center gap-3 shadow-lg rounded-3xl">
-        <button className='rounded-2xl justify-center'>Text</button>
+      <div className="flex flex-wrap p-3 m-2 bg-white justify-center gap-3 shadow-lg rounded-2xl">
+        <button className='rounded-3xl justify-center'>Text</button>
       
       </div>
 
