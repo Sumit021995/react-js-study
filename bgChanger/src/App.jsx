@@ -23,6 +23,9 @@ function App() {
         <button onClick={ () => {return setColor("pink"),setTextColor('black')} } className='outline-none rounded-full justify-center px-4 py-1  text-black' style={{backgroundColor:'pink'}}>Pink</button>
         <button onClick={ () => {return setColor("olive"),setTextColor('white')} } className='outline-none rounded-full justify-center px-4 py-1  text-white' style={{backgroundColor:'olive'}}>Olive</button>
         <button onClick={ () => {return setColor("yellow"),setTextColor('black')} } className='outline-none rounded-full justify-center px-4 py-1  text-black' style={{backgroundColor:'yellow'}}>Yellow</button>
+        <button onClick={ () => {return setColor("black"),setTextColor('white')} } className='outline-none rounded-full justify-center px-4 py-1  text-white' style={{backgroundColor:'black'}}>Black</button>
+        <button onClick={ () => {return setColor("white"),setTextColor('black')} } className='outline-none rounded-full justify-center px-4 py-1  text-black ' style={{backgroundColor:'white'}}>White</button>
+        <button onClick={ () => {return setColor("lavender"),setTextColor('black')} } className='outline-none rounded-full justify-center px-4 py-1  text-black' style={{backgroundColor:'lavender'}}>Lavender</button>
       
       </div>
 
