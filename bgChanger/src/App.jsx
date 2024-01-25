@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 function App() {
   const [color, setColor] = useState("black")
-  const [textColor='white', setTextColor] = useState("white")
+  const [textColor, setTextColor] = useState("white")
 
   return (
     
