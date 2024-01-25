@@ -2,9 +2,8 @@ import { useState } from 'react'
 
 
 function App() {
-function App() {
   const [length, setLength] = useState(8);
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState("");
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [characterAllowed, setCharacterAllowed] = useState(false);
 
