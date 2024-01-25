@@ -2,11 +2,16 @@ import { useState } from 'react'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+function App() {
+  const [length, setLength] = useState(8);
+  const [password, setPassword] = useState();
+  const [numberAllowed, setNumberAllowed] = useState(false);
+  const [characterAllowed, setCharacterAllowed] = useState(false);
 
   return (
     <>
-      <h1 className='text-4xl text-center text-white'>Password Generator</h1>
+      <h1 className='text-4xl text-center text-white mt-3'>Password Generator</h1>
+      <div></div>
       
     </>
   )
