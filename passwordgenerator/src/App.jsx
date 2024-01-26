@@ -8,8 +8,10 @@ function App() {
   const [characterAllowed, setCharacterAllowed] = useState(false);
   const passwordGenerator =  useCallback(()=>{
     let pass='';
-    let str='';
-    
+    let str='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    let specialChar='!@#$%^&*-_+=[]{}~`'
+    let num='0123456789'
+
   },[length,setPassword,numberAllowed,characterAllowed]);
 
   return (
