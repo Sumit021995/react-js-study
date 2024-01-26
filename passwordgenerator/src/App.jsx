@@ -13,6 +13,10 @@ function App() {
     let num='0123456789'
     if(numberAllowed) str += num;
     if(numberAllowed) str += specialChar;
+    for (let i = 0;  i < length; i++) {
+      let charIndex =  parseInt(Math.random()*(str.length) + 1) 
+      pass += str.charAt(charIndex)
+    }
 
   },[length,setPassword,numberAllowed,characterAllowed]);
 
