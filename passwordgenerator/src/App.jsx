@@ -1,3 +1,4 @@
+import { Input } from 'postcss';
 import { useState , useCallback } from 'react'
 
 
@@ -35,6 +36,17 @@ function App() {
       readOnly
       />
       <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>Copy</button>
+</div>
+<div className='flex-text-sm gap-x-2'>
+  <div className='flex item-center gap-x-1'>
+    <input
+      type='range'
+      min={6}
+      max={50}
+      value={length}
+      className=''
+    />
+  </div>
 </div>
 </div>
       
