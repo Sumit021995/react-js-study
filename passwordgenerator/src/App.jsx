@@ -6,11 +6,11 @@ function App() {
   const [password, setPassword] = useState("");
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [characterAllowed, setCharacterAllowed] = useState(false);
-  const passwordGenerator =  function(){
-    const specialChar
-
-
-  }
+  const passwordGenerator =  useCallback(()=>{
+    let pass='';
+    let str='';
+    
+  },[length,setPassword,numberAllowed,characterAllowed]);
 
   return (
     <>
