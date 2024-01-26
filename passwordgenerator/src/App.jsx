@@ -11,6 +11,8 @@ function App() {
     let str='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     let specialChar='!@#$%^&*-_+=[]{}~`'
     let num='0123456789'
+    if(numberAllowed) str += num;
+    if(numberAllowed) str += specialChar;
 
   },[length,setPassword,numberAllowed,characterAllowed]);
 
