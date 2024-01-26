@@ -29,7 +29,9 @@ function App() {
       <input 
       type = 'text'
       value={password}
-      className=''
+      className='outline-none w-full py-1 px-3'
+      placeholder={password}
+      readOnly
       ></input>
 
       </div></div>
