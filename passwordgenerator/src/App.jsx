@@ -33,9 +33,9 @@ function App() {
       className='outline-none w-full py-1 px-3 '
       placeholder={password}
       readOnly
-      ></input>
-
-      </div></div>
+      />
+</div>
+</div>
       
     </>
   )
