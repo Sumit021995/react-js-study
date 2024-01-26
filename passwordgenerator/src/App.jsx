@@ -12,18 +12,19 @@ function App() {
     let specialChar='!@#$%^&*-_+=[]{}~`'
     let num='0123456789'
     if(numberAllowed) str += num;
-    if(numberAllowed) str += specialChar;
+    if(characterAllowed) str += specialChar;
     for (let i = 0;  i < length; i++) {
       let charIndex =  parseInt(Math.random()*(str.length) + 1) 
       pass += str.charAt(charIndex)
     }
+    setPassword(pass)
 
   },[length,setPassword,numberAllowed,characterAllowed]);
 
   return (
     <>
       <h1 className='text-4xl text-center text-white mt-3'>Password Generator</h1>
-      <div></div>
+      <div className='w-full max-w-md mx-auto shadow-2xl rounded-lg px-4 my-8 text-orange-500'></div>
       
     </>
   )
