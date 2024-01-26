@@ -44,8 +44,10 @@ function App() {
       min={6}
       max={50}
       value={length}
-      className=''
+      className='curser-pointer'
+      onChange = {(e)=>{setLength(e.target.value)}}
     />
+    <label>Length :{length}</label>
   </div>
 </div>
 </div>
