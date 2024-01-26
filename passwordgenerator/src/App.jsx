@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       
-      <div className='w-full max-w-md mx-auto shadow-2xl rounded-lg px-4 my-8 text-orange-500 bg-gray-300 text-center'>
+      <div className='w-full max-w-md mx-auto shadow-2xl rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-300'>
       <h1 className=' text-center text-white '>Password Generator</h1>
       <div className='flex-shadow rounded-lg overflow-hidden mb-4'>
       <input 
