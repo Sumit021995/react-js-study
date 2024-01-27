@@ -1,5 +1,5 @@
 import { Input } from 'postcss';
-import { useState , useCallback } from 'react'
+import { useState , useCallback , useEffect } from 'react'
 
 
 function App() {
@@ -21,6 +21,11 @@ function App() {
     setPassword(pass)
 
   },[length,setPassword,numberAllowed,characterAllowed]);
+
+  useEffect(()=>{
+    passwordGenerator();
+  },[length,characterAllowed,numberAllowed]);
+
 
   return (
     <>
@@ -47,7 +52,7 @@ function App() {
       className='curser-pointer'
       onChange = {(e)=>{setLength(e.target.value)}}
     />
-    <label>Length: { length}</label>
+    <label>Length:{length}</label>
   </div>
   <div className="flex items-center gap-x-1">
   <input
@@ -65,7 +70,7 @@ function App() {
       id='characterInput'
       onChange = {()=>{setCharacterAllowed((prev)=>!prev)}}
     />
-    <label>Character</label> 
+    <label htmlFor='characterInput'>Character</label> 
     </div>
 </div>
 </div>
