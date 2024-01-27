@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       
-      <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
+      <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-700 text-orange-500">
       <h1 className='text-white text-center my-3 text-3xl'>Password Generator</h1>
     <div className="flex shadow rounded-lg overflow-hidden mb-4">
       <input 
@@ -56,7 +56,7 @@ function App() {
       id='numberInput'
       onChange = {()=>{setNumberAllowed((prev)=>!prev)}}
     />
-    <label> Numbers</label>
+    <label htmlFor='numberInput'>Numbers</label>
     </div>
     <div className='flex items-center gap-x-1'>
      <input
@@ -65,7 +65,7 @@ function App() {
       id='characterInput'
       onChange = {()=>{setCharacterAllowed((prev)=>!prev)}}
     />
-    <label> Character</label> 
+    <label>Character</label> 
     </div>
 </div>
 </div>
