@@ -37,8 +37,8 @@ function App() {
       />
       <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>Copy</button>
 </div>
-<div className='flex-text-sm gap-x-2'>
-  <div className='flex item-center gap-x-1'>
+<div className='flex text-sm gap-x-2'>
+  <div className='flex items-center gap-x-1'>
     <input
       type='range'
       min={6}
@@ -47,16 +47,16 @@ function App() {
       className='curser-pointer'
       onChange = {(e)=>{setLength(e.target.value)}}
     />
-    <label>Length :{length}</label>
+    <label>Length: { length}</label>
   </div>
-  <div className="flex-item-center gap-x-1">
+  <div className="flex items-center gap-x-1">
   <input
       type='checkbox'
       defaultChecked={numberAllowed}
       id='numberInput'
       onChange = {()=>{setNumberAllowed((prev)=>!prev)}}
     />
-    <label>Numbers</label>
+    <label> Numbers</label>
     </div>
 </div>
 </div>
