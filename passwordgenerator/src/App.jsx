@@ -24,7 +24,7 @@ function App() {
 
   useEffect(()=>{
     passwordGenerator();
-  },[length,characterAllowed,numberAllowed]);
+  },[length,characterAllowed,numberAllowed,passwordGenerator]);
 
   const passwordRef = useRef(null);
 
