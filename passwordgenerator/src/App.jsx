@@ -27,6 +27,9 @@ function App() {
   },[length,characterAllowed,numberAllowed,passwordGenerator]);
 
   const passwordRef = useRef(null);
+  const copyPasswordToClipboard = ()=>{
+
+  }
 
 
   return (
@@ -43,7 +46,8 @@ function App() {
       readOnly
       ref = {passwordRef}
       />
-      <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>Copy</button>
+      <button
+      onClick={copyPasswordToClipboard} className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>Copy</button>
 </div>
 <div className='flex text-sm gap-x-2'>
   <div className='flex items-center gap-x-1'>
