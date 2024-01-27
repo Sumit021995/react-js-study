@@ -27,9 +27,9 @@ function App() {
   },[length,characterAllowed,numberAllowed,passwordGenerator]);
 
   const passwordRef = useRef(null);
-  const copyPasswordToClipboard = ()=>{
+  const copyPasswordToClipboard = useCallback(()=>{
 
-  }
+  },[password]);
 
 
   return (
