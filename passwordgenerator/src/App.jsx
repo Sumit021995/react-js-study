@@ -26,7 +26,7 @@ function App() {
     passwordGenerator();
   },[length,characterAllowed,numberAllowed]);
 
-  const currentRef = useRef(null);
+  const passwordRef = useRef(null);
 
 
   return (
