@@ -26,6 +26,8 @@ function App() {
     passwordGenerator();
   },[length,characterAllowed,numberAllowed]);
 
+  const 
+
 
   return (
     <>
