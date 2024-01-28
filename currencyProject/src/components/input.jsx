@@ -1,6 +1,8 @@
 import React from 'react'
+import { useEffect , useState } from "react";
+import useCurrencyHook from '../hooks/currencyHook';
 
-function input() {
+function Input() {
   return (
     <div>
       
@@ -8,4 +10,4 @@ function input() {
   )
 }
 
-export default input
+export default Input
