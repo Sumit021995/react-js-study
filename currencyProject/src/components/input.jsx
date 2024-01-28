@@ -2,14 +2,20 @@ import React from 'react'
 import { useEffect , useState } from "react";
 import useCurrencyHook from '../hooks/currencyHook';
 
-function Input({
+function Input(
+    {
     label,
-    
-    className = "",
-}) {
+    amount,
+    onAmountChange,
+    onCurrencyChange,
+    currencyOptions = [],
+    selectCurrency = 'usd',
+    amountDisable = false ,
+    currencyDisable = false,
+    className = "" 
+    }){
    
-
-    return (
+   return (
         <div className={`bg-white p-3 rounded-lg text-sm flex  ${className}`}>
             <div className="w-1/2">
                 <label  className="text-black/40 mb-2 inline-block">
@@ -37,6 +43,7 @@ function Input({
             </div>
         </div>
     );
-}
+   }
+
 
 export default Input;
