@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import useCurrencyHook from "./hooks/currencyHook";
-import {Input} from './components/index';
+import { Input } from './components';
 
 
 function App() {
@@ -34,12 +34,17 @@ function App() {
                     <form
                         onSubmit={(e) => {
                             e.preventDefault();
+                            convert()
                            
                         }}
                     >
                         <div className="w-full mb-1">
                             <Input
                                 label="From"
+                                amount = {amount}
+                                currencyOptions ={currencyOptions}
+                                onCurrencyChange ={(currency)=> setAmount(amount)}
+                                selectCurrency ={from}
                                 
                             />
                         </div>
@@ -47,15 +52,18 @@ function App() {
                             <button
                                 type="button"
                                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
-                                
+                                onClick={swap}
                             >
                                 swap
                             </button>
                         </div>
                         <div className="w-full mt-1 mb-4">
-                            <InputBox
+                            <Input
                                 label="To"
-                                
+                                amount = {convertedAmount}
+                                currencyOptions ={currencyOptions}
+                                onCurrencyChange ={(currency)=> setTo(currency)}
+                                selectCurrency ={from}
                             />
                         </div>
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">

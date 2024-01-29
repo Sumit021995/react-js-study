@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect, useState, useId } from "react";
-import useCurrencyHook from "../hooks/currencyHook";
+import React , { useId } from "react";
 
 function Input({
   label,
@@ -11,7 +9,7 @@ function Input({
   selectCurrency = "usd",
   amountDisable = false,
   currencyDisable = false,
-  className = "",
+  className = ""
 }) {
   const amountInputId = useId();
   return (
