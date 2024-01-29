@@ -6,6 +6,7 @@ import {Input} from './components/index';
 function App() {
   const [amount, setAmount] = useState(0)
   const [from, setFrom] = useState("usd")
+  const [to, setTo] = useState("inr")
 
   return (
     <>
