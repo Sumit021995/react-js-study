@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import useCurrencyHook from "./hooks/currencyHook";
-import Input from './components/input';
+import {Input} from './components/index';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [amount, setAmount] = useState(0)
+  const [from, setFrom] = useState("usd")
 
   return (
     <>
