@@ -9,6 +9,7 @@ function App() {
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
   const currencyHook = useCurrencyHook(from)
+  const currencyOptions = Object.keys(currencyHook)
 
   return (
     <>
