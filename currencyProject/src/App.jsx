@@ -11,6 +11,11 @@ function App() {
   const currencyHook = useCurrencyHook(from)
   const currencyOptions = Object.keys(currencyHook)
 
+  const swap = ()=>{
+    setFrom(to)
+    setTo(from)
+  }
+
   return (
     <>
   <Input/>
