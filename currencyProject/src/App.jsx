@@ -18,6 +18,10 @@ function App() {
     setConvertedAmount(amount)
   }
 
+  const convert = ()=>{
+    setConvertedAmount(amount*currencyHook[to])
+  }
+
   return (
     <>
   <Input/>
