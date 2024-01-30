@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import useCurrencyHook from "./hooks/currencyHook";
 import  { Input }  from './components/index';
+import Image from './assets/pexels-mayur-rawte-1583244.jpg'
 
 
 function App() {
@@ -25,9 +26,7 @@ function App() {
   return (
     <div
             className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-            style={{
-                backgroundImage: `url('https://images.pexels.com/photos/672630/pexels-photo-672630.jpeg?auto=compress&cs=tinysrgb&w=600')`,
-            }}
+            style={{backgroundImage:Image}}
         >
             <div className="w-full">
                 <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
