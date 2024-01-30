@@ -26,7 +26,7 @@ function App() {
     <div
             className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
             style={{
-                backgroundImage: `url('https://images.pexels.com/photos/16295810/pexels-photo-16295810/free-photo-of-winding-road-by-the-seashore-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')`,
+                backgroundImage: `url('https://images.pexels.com/photos/672630/pexels-photo-672630.jpeg?auto=compress&cs=tinysrgb&w=600')`,
             }}
         >
             <div className="w-full">
