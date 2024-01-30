@@ -64,10 +64,11 @@ function App() {
                                 currencyOptions ={currencyOptions}
                                 onCurrencyChange ={(currency)=> setTo(currency)}
                                 selectCurrency ={from}
+                                amountDisable
                             />
                         </div>
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                            Convert 
+                            Convert {from.toUpperCase()} to {to.toLowerCase()}
                         </button>
                     </form>
                 </div>
