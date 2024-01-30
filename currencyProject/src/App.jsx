@@ -26,7 +26,7 @@ function App() {
     <div
             className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
             style={{ 
-                backgroundImage: `url('https://i.pinimg.com/originals/c8/08/c1/c808c1253af677c8efde6b59ccfeafce.gif')`,
+                backgroundImage: `url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f9b913b-c48a-43ab-a9aa-26d4355d1d80/dgdgq41-18a39afc-bd2a-4226-80b1-66754639fd3a.png/v1/fill/w_1280,h_549,q_80,strp/space_art_6___4k_ultrawide_wallpaper_background_by_ixul_dgdgq41-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQ5IiwicGF0aCI6IlwvZlwvNmY5YjkxM2ItYzQ4YS00M2FiLWE5YWEtMjZkNDM1NWQxZDgwXC9kZ2RncTQxLTE4YTM5YWZjLWJkMmEtNDIyNi04MGIxLTY2NzU0NjM5ZmQzYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zyyf2_r1WltyYezJeJVXKRfbi37213Oh-B7s5g79Pfs')`,
             }}
         >
             <div className="w-full">
