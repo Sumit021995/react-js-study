@@ -17,6 +17,12 @@ function App() {
     setAmount(convertedAmount)
     setConvertedAmount(amount)
   }
+  const clear= ()=>{
+    setAmount(0)
+    setFrom('usd')
+    setTo('inr')
+    setConvertedAmount(0)
+  }
 
   const convert = ()=>{
     setConvertedAmount(amount*currencyHook[to])
@@ -50,6 +56,13 @@ function App() {
                             />
                         </div>
                         <div className="relative w-full h-0.5">
+                            <button
+                                type="button"
+                                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
+                                onClick={swap}
+                            >
+                                Swap
+                            </button>
                             <button
                                 type="button"
                                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
