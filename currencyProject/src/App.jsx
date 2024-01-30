@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import useCurrencyHook from "./hooks/currencyHook";
 import  { Input }  from './components/index';
-import image from './assets/image.jpg'
 
 
 function App() {
@@ -26,7 +25,9 @@ function App() {
   return (
     <div
             className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-            style={{backgroundImage:image}}
+            style={{ 
+                backgroundImage: `url('https://i.pinimg.com/originals/c8/08/c1/c808c1253af677c8efde6b59ccfeafce.gif')`,
+            }}
         >
             <div className="w-full">
                 <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
