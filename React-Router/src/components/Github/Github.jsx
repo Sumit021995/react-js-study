@@ -14,8 +14,8 @@ function Github() {
     // }, [])
     
   return (
-    <div className='text-center  bg-gray-600 text-white p-6 text-3xl m-4'>{data.bio}
-    <img  className='rounded-xl align-middle'  src={data.avatar_url} alt="Git picture" width={300} />
+    <div className='text-center  bg-gray-600 text-white p-10 text-3xl m-10'>{data.bio}
+    <img  className='rounded-xl my-7 justify-center'  src={data.avatar_url} alt="Git picture" width={300} />
     </div>
   )
 }
