@@ -35,7 +35,7 @@ export default function Header() {
               <li>
                 <NavLink
                   className={({isActive}) =>
-                    ` block py-2 pr-4 pl-3 ${isActive}  duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 `
+                    ` block py-2 pr-4 pl-3 ${isActive? 'text-'}  duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 `
                   }
                 >
                   Home
