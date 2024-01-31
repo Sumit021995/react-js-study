@@ -2,7 +2,7 @@ import React from 'react'
 
 function Github() {
   return (
-    <div className='bg-gray-400 text-orange-700'>
+    <div className='bg-gray-500 text-white text-center py-2'>
       Github Followers : {}
     </div>
   )
