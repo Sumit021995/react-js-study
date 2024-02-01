@@ -1,8 +1,14 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
 
 export default function Contact() {
+    const id = useLoaderData()
     return (
         <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
+        <div className='text-center  bg-gray-600 text-white p-10 text-3xl m-5 rounded-lg'>
+        <img  className='rounded-xl my-7 justify-center'  src={id.avatar_url} alt="Git picture" width='auto' />
+        <h1 className='text-center  bg-gray-600 text-white'> Github User: {id.login}</h1>
+        </div>
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2">
