@@ -17,9 +17,9 @@ function Login() {
       <div>
       <input type='text' value = {username} onChange ={(e)=>setUsername(e.target.value)} placeholder='username'/>
       {"    "}
-      <input type='text' value = {password} onChange ={(e)=>setPassword(e.target.value)} placeholder='password'/>
+      <input className='rounded-sm' type='text' value = {password} onChange ={(e)=>setPassword(e.target.value)} placeholder='password'/>
       </div>
-      <button onClick={handleSubmit}>Submit</button>
+      <button className='rounded-xl bg-yellow-300 p-2 m-2 ' onClick={handleSubmit}>Submit</button>
     </div>
   )
 }
