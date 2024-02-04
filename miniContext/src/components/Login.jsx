@@ -12,7 +12,7 @@ function Login() {
         setUser({username,password})
     }
   return (
-    <div className='mx-4 bg-gray-800'>
+    <div >
       <h2 className='mx-4 text-white my-2 text-2xl'>Login</h2>
       <div>
       <input className='rounded-sm mx-4' type='text' value = {username} onChange ={(e)=>setUsername(e.target.value)} placeholder='Username'/>

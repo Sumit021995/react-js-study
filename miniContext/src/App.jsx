@@ -10,7 +10,7 @@ function App() {
 
   return (
     <UserContextProvider >
-      <div>
+      <div className='flex-wrap bg-gray-800 my-4 mx-4'>
       <Login/>
       <Profile/>
       </div>
