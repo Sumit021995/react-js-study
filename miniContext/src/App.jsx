@@ -9,10 +9,11 @@ function App() {
   
 
   return (
-    <UserContextProvider>
-      <h1>Sumit Saurav</h1>
+    <UserContextProvider >
+      <div className='flex-wrap bg-gray-500 justify-center'>
       <Login/>
       <Profile/>
+      </div>
     </UserContextProvider>
   )
 }
