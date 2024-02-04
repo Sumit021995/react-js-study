@@ -19,7 +19,7 @@ function Login() {
       <div className='my-2'>   </div>
       <input className='rounded-sm mx-4' type='text' value = {password} onChange ={(e)=>setPassword(e.target.value)} placeholder='Password'/>
       </div>
-      <button className='rounded-xl bg-yellow-300 p-2 m-2 ' onClick={handleSubmit}>Submit</button>
+      <button className='rounded-lg bg-yellow-300 p-1 m-4 ' onClick={handleSubmit}>Submit</button>
     </div>
   )
 }
