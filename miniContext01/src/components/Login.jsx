@@ -13,11 +13,10 @@ function Login() {
     }
 
   return (
-    <div style={{marginLeft:'20px'}}>
+    <div style={{marginLeft:'15px'}}>
     <h1>Login</h1>
-      <input type='text' value={username} placeholder='Username' onChange={(e)=>setUsername(e.target.value)}/>
-      <div>  </div>
-      <input type='text' value={password} placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/>
+      <input  style={{margin:'10px', padding:'4px'}} type='text' value={username} placeholder='Username' onChange={(e)=>setUsername(e.target.value)}/>
+      <input  style={{margin:'10px', padding:'4px'}} type='text' value={password} placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/><br/>
       <button onClick={handleSubmit}>Submit</button>
     </div>
   )
