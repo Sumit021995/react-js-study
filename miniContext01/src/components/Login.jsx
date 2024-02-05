@@ -13,7 +13,7 @@ function Login() {
     }
 
   return (
-    <div>
+    <div style={{marginLeft:'20px'}}>
     <h1>Login</h1>
       <input type='text' value={username} placeholder='Username' onChange={(e)=>setUsername(e.target.value)}/>
       <div>  </div>
