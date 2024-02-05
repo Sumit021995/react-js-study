@@ -9,3 +9,5 @@ const UserContextProvider = ({childern})=>{
         </UserContext.Provider>
     )
 }
+
+export default UserContextProvider
