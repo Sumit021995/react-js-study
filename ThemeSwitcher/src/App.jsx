@@ -9,7 +9,7 @@ function App() {
   const darkTheme = ()=>{
     
   }
-  const darkTheme = ()=>{
+  const lightTheme = ()=>{
 
   }
   
