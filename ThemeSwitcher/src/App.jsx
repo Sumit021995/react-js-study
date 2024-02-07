@@ -7,10 +7,10 @@ function App() {
   const[themeMode,setThemeMode]=useState('light')
 
   const darkTheme = ()=>{
-    
+    setThemeMode('dark')
   }
   const lightTheme = ()=>{
-
+    
   }
   
 
