@@ -15,8 +15,10 @@ function App() {
    // actual change of theme 
 
    useEffect(()=>{
-    document.querySelector('html').classList.remove('light')
-   },[])
+    document.querySelector('html').classList.remove('light','dark')
+    document.querySelector('html').classList.remove('light','dark')
+
+  },[])
 
   return (
     <ThemeProvider value={{themeMode,lightTheme , darkTheme}}>
