@@ -5,6 +5,13 @@ import { ThemeProvider } from "./context/Theme"
 
 function App() {
   const[themeMode,setThemeMode]=useState('light')
+
+  const darkTheme = ()=>{
+    
+  }
+  const darkTheme = ()=>{
+
+  }
   
 
   return (
