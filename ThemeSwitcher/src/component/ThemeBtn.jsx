@@ -7,7 +7,12 @@ export default function ThemeBtn() {
     const onChnageBtn = (e)=>{
         e.preventDefault();
         const darkModeStatus = e.currentTarget.checked
-        if(darkModeStatus)
+        if(darkModeStatus){
+            darkTheme();
+
+        }else {
+            lightTheme();
+        }
     }
     return (
         <label className="relative inline-flex items-center cursor-pointer">
