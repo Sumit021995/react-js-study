@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ThemeProvider } from "./context/Theme"
 
 
@@ -12,7 +12,11 @@ function App() {
   const lightTheme = ()=>{
     setThemeMode('light')
   }
-  
+   // actual change of theme 
+
+   useEffect(()=>{
+    
+   })
 
   return (
     <ThemeProvider value={{themeMode,lightTheme , darkTheme}}>
