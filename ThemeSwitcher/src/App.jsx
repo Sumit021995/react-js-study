@@ -1,8 +1,10 @@
+import { useState } from "react"
 import { ThemeProvider } from "./context/Theme"
 
 
 
 function App() {
+  const[themeMode,setThemeMode]=useState('light')
   
 
   return (
