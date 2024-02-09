@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { TodoProvider } from './context/TodoContext'
 import {} from './context/index'
 import TodoForm from './components/TodoForm'
+import TodoItem from './components/TodoItems'
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
                         {/*Loop and Add TodoItem here */}
                         {todos.map((todo)=>(
                           <div className='w-full' key={todo.id}>
-
+                            <TodoItem todo ={todo}/>
                           </div>
                         ))}
 
