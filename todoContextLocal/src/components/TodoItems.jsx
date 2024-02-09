@@ -1,7 +1,9 @@
 import React from "react";
+import { useTodo } from "../context";
 
 function TodoItem({ todo }) {
-    
+
+    const {addTodo} = useTodo()
 
     return (
         <div
