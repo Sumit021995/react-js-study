@@ -8,7 +8,7 @@ function TodoForm() {
     const add = (e)=>{
         e.preventDefault();
         if(!todo) return
-        addTodo({})
+        addTodo({id:Date.now(),todo:todo,completed:false})
     }
 
     return (
