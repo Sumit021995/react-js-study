@@ -3,7 +3,7 @@ import { TodoProvider } from './context/TodoContext'
 
 
 function App() {
-  const [todos.setTodos]=useState([])
+  const [todos , setTodos]=useState([])
 
   const addTodo = ()=>{
     
