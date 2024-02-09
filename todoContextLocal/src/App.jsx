@@ -9,7 +9,7 @@ function App() {
     setTodos((prev)=> [{id:Date.now(),...todo},...prev])
   }
   const updatedTodo = (id,todo)=>{
-    setTodos((prev)=> prev.map((prevTodo)=> prevTodo))
+    setTodos((prev)=> prev.map((prevTodo)=> (prevTodo)))
 
   }
   const deleteTodo = ()=>{
