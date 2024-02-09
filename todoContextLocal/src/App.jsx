@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { TodoProvider } from './context/TodoContext'
+import {} from './context/index'
 
 
 function App() {
@@ -17,8 +18,7 @@ function App() {
 
   }
   const toggleComplete = (id)=>{
-    setTodos((prev)=>prev.map((prevTodo)=>(prevTodo.id === id 
-      )))
+    setTodos((prev)=>prev.map((prevTodo)=>(prevTodo.id === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo )))
 
   }
   
