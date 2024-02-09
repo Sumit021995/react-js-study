@@ -8,7 +8,7 @@ function App() {
   const addTodo = ()=>{
     
   }
-  const updateTodo = ()=>{
+  const updatedTodo = ()=>{
 
   }
   const deleteTodo = ()=>{
