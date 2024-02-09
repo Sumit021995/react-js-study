@@ -13,7 +13,7 @@ todos:[
 addTodo : (todo)=>{},
 updatedTodo : (id,todo)=>{},
 deleteTodo : (id)=>{},
-toggleCompleted : (id)=>{}
+toggleComplete : (id)=>{}
 
 });
 
