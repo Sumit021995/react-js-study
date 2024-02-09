@@ -8,7 +8,7 @@ function TodoItem({ todo }) {
     const [todoMsg,setTodoMsg] = useState(todo.todo)
 
     const editTodo =()=>{
-        updatedTodo({id,todo,})
+        updatedTodo({id})
     }
 
 
