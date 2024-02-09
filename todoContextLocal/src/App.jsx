@@ -3,6 +3,19 @@ import {  } from 'react'
 
 function App() {
   
+  const addTodo = ()=>{
+    
+  }
+  const updateTodo = ()=>{
+
+  }
+  const deleteTodo = ()=>{
+
+  }
+  const toggleComplete = ()=>{
+
+  }
+  
   return (
     <div className="bg-[#172842] min-h-screen py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
