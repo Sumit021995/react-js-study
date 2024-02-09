@@ -3,7 +3,7 @@ import { useTodo } from "../context";
 
 function TodoItem({ todo }) {
 
-    const {addTodo} = useTodo()
+    const {deleteTodo,updatedTodo,toggleCompleted} = useTodo()
 
     return (
         <div
