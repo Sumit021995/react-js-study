@@ -15,3 +15,8 @@ export const TodoContext = createContext({
     checkboxTrue : (id)=>{},
 });
 
+export const TodoProvder = TodoContext.Provider
+
+export const useTodo = ()=>{
+    return useContext(TodoContext);
+}
