@@ -8,7 +8,7 @@ function App() {
   // const {addTodo , updateTodo , deleteTodo , checkboxTrue } = useTodo()
 
   const addTodo = (todoMsg)=>{
-    setTodosArray((prev)=> [{id:Date.now() , todoMsg:todoMsg},...prev])
+    setTodosArray((prev)=> [{id:Date.now() , ...todoMsg},...prev])
   }
   const updateTodo = ()=>{
 
