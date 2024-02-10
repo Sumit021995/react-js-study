@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { TodoProvider } from './context/TodoContext'
-import {} from './context/index'
 import TodoForm from './components/TodoForm'
 import TodoItem from './components/TodoItems'
 
