@@ -1,7 +1,7 @@
 import { createContext , useContext } from 'react';
 
 export const TodoContext = createContext({
-    todos :[
+    todosArray :[
         {
             id:1,
             todoMsg:'Todo Message',
