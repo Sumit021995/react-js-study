@@ -5,7 +5,7 @@ todos:[
     {
         id:1,
         todo:'todo msg',
-        completed: false,
+        completed: false
 
     }
 
