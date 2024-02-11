@@ -12,7 +12,7 @@ export const TodoContext = createContext({
     addTodo : (todoMsg)=>{},
     updateTodo : (id,todoMsg)=>{},
     deleteTodo : (id)=>{},
-    checkboxTrue : (id)=>{},
+    checkboxFlip : (id)=>{},
 });
 
 export const TodoProvder = TodoContext.Provider
