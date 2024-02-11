@@ -11,7 +11,7 @@ function App() {
     setTodosArray((prev)=> [{id:Date.now() , ...todoMsg},...prev])
   }
   const updateTodo = (id , todoMsg)=>{
-    setTodosArray(()=>())
+    setTodosArray((prev)=> prev.map(()=>()))
 
   }
   const deleteTodo = ()=>{
