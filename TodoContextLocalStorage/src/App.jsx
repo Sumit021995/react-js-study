@@ -21,6 +21,10 @@ function App() {
     setTodosArray((prev)=>prev.map((prevTodo)=>(prevTodo.id === id ? {...prevTodo , checkbox:!prevTodo.checkbox } : prevTodo)))
   }
 
+  useEffect(() => {
+    
+  }, [input]);
+
   return (
     <TodoProvder value={{ todosArray , addTodo , updateTodo , deleteTodo , checkboxFlip}} >
     <div className="bg-[#172842] min-h-screen py-8">
