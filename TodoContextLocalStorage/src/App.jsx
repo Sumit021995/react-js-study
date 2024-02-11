@@ -15,10 +15,10 @@ function App() {
 
   }
   const deleteTodo = (id)=>{
-    setTodosArray((prev) => prev.filter(!prevTodo.id)))
+    setTodosArray((prev) => prev.filter((prevTodo) => prevTodo.id !== id ))
   }
-  const checkboxTrue = ()=>{
-
+  const checkboxTrue = (id)=>{
+    setTodosArray((prev)=>)
   }
 
   return (
