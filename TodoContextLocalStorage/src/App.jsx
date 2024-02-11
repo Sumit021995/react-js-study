@@ -22,7 +22,7 @@ function App() {
   }
 
   useEffect(() => {
-    
+    const todosArray = JSON.parse(localStorage.getItem('todosArray'))
   }, [input]);
 
   return (
