@@ -18,7 +18,7 @@ function App() {
     setTodosArray((prev) => prev.filter((prevTodo) => prevTodo.id !== id ))
   }
   const checkboxTrue = (id)=>{
-    setTodosArray((prev)=>prev.map((prevTodo)=>(prevTodo.id === id ? {} : prevTodo)))
+    setTodosArray((prev)=>prev.map((prevTodo)=>(prevTodo.id === id ? {...prevTodo , checkbox:!prevTodo.checkbox } : prevTodo)))
   }
 
   return (
