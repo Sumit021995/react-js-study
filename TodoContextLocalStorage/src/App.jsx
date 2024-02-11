@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import { TodoProvder , useTodo } from './context/TodoContext'
 
 
@@ -23,7 +23,10 @@ function App() {
 
   useEffect(() => {
     const todosArray = JSON.parse(localStorage.getItem('todosArray'))
-  }, [input]);
+    if(todosArray && todosArray.length > 0) {
+      setTodosArray(todosArray)
+    }
+  }, [todosArray]);
 
   return (
     <TodoProvder value={{ todosArray , addTodo , updateTodo , deleteTodo , checkboxFlip}} >
