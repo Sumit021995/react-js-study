@@ -22,11 +22,15 @@ function App() {
   }
 
   useEffect(() => {
-    const todosArray = JSON.parse(localStorage.getItem('todosArray'))
+    const todosArray = JSON.parse(localStorage.getItem("todosArray"))
     if(todosArray && todosArray.length > 0) {
       setTodosArray(todosArray)
     }
   }, [todosArray]);
+
+  useEffect(() => {
+
+  })
 
   return (
     <TodoProvder value={{ todosArray , addTodo , updateTodo , deleteTodo , checkboxFlip}} >
