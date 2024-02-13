@@ -2,7 +2,7 @@ import { useTodo } from "../context/TodoContext";
 
 function TodoItem({ todo }) {
     
-    const {checkboxFlip , } = useTodo()
+    const {checkboxFlip , deleteTodo , } = useTodo()
 
     return (
         <div
@@ -14,7 +14,7 @@ function TodoItem({ todo }) {
                 type="checkbox"
                 className="cursor-pointer"
                 checked={todo.completed}
-                onChange={toggleCompleted}
+                onChange={checkboxFlip}
             />
             <input
                 type="text"
