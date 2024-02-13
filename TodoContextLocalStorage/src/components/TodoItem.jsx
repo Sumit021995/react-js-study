@@ -1,7 +1,8 @@
-
+import { useTodo } from "../context/TodoContext";
 
 function TodoItem({ todo }) {
     
+    const {checkboxFlip , } = useTodo()
 
     return (
         <div
