@@ -1,6 +1,6 @@
 import { useTodo } from "../context/TodoContext";
 
-function TodoItem({ todo }) {
+function TodoItem({ todoMsg }) {
     
     const {checkboxFlip , deleteTodo , } = useTodo()
 
