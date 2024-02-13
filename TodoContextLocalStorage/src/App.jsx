@@ -26,11 +26,11 @@ function App() {
     if(todosArray && todosArray.length > 0) {
       setTodosArray(todosArray)
     }
-  }, [todosArray]);
+  }, []);
 
   useEffect(() => {
-
-  })
+    localStorage.setItem("todosArray" , JSON.stringify(todosArray))
+  },[todosArray])
 
   return (
     <TodoProvder value={{ todosArray , addTodo , updateTodo , deleteTodo , checkboxFlip}} >
