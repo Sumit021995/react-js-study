@@ -5,7 +5,7 @@ function TodoItem({ todoMsg }) {
     const [todoMsg , setTodoMsg] = useState(todoMsg.todoMsg)
     const [isTodoEditable,setIsTodoEditable] = useState(false)
 
-    const editTodo = 
+    const editTodo = ()=>{}
     
     
     const {checkboxFlip , deleteTodo , updateTodo } = useTodo()
