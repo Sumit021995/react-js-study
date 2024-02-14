@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useTodo } from "../context/TodoContext";
 
 function TodoItem({ todoMsg }) {
-    const [todoMsg , setTodoMsg] = useState()
+    const [todoMsg , setTodoMsg] = useState(todoMsg.todoMsg)
+    
     
     const {checkboxFlip , deleteTodo , updateTodo } = useTodo()
 
