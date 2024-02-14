@@ -1,12 +1,17 @@
 import { useState } from "react";
+import { useTodo } from "../context/TodoContext";
 
 
 function TodoForm() {
     const [todoMsg , setTodoMsg] = useState("")
+    const {addTodo} = useTodo()
+
+    const add = 
 
     return (
         <form  className="flex">
             <input
+                value={todoMsg}
                 type="text"
                 placeholder="Write Todo..."
                 className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
