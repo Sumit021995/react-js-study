@@ -8,7 +8,8 @@ function TodoForm() {
 
     const add = (e)=>{
         e.preventDefault()
-        addTodo()
+        if (!todoMsg) return 
+        addTodo(setTodoMsg)
     }
 
     return (
