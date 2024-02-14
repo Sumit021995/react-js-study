@@ -14,9 +14,9 @@ function TodoForm() {
     }
 
     return (
-        <form  className="flex">
+        <form  onSubmit={add} className="flex">
             <input
-                onSubmit={add}
+                
                 value={todoMsg}
                 onChange={(e)=> setTodoMsg(e.target.value)}
                 type="text"
