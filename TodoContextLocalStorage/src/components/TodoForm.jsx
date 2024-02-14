@@ -10,12 +10,15 @@ function TodoForm() {
         e.preventDefault()
         if (!todoMsg) return 
         addTodo({todoMsg:todoMsg , checkbox:false})
+        setTodoMsg("")
     }
 
     return (
         <form  className="flex">
             <input
+                onSubmit={add}
                 value={todoMsg}
+                onChange={(e)=> setTodoMsg(e.target.value)}
                 type="text"
                 placeholder="Write Todo..."
                 className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
