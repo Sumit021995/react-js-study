@@ -6,7 +6,10 @@ function TodoForm() {
     const [todoMsg , setTodoMsg] = useState("")
     const {addTodo} = useTodo()
 
-    const add = 
+    const add = (e)=>{
+        e.preventDefault()
+        addTodo()
+    }
 
     return (
         <form  className="flex">
