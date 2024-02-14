@@ -4,7 +4,7 @@ import { useTodo } from "../context/TodoContext";
 function TodoItem({ todoMsg }) {
     const [todoMsg , setTodoMsg] = useState()
     
-    const {checkboxFlip , deleteTodo , } = useTodo()
+    const {checkboxFlip , deleteTodo , updateTodo } = useTodo()
 
     return (
         <div
