@@ -3,6 +3,7 @@ import { useTodo } from "../context/TodoContext";
 
 function TodoItem({ todoMsg }) {
     const [todoMsg , setTodoMsg] = useState(todoMsg.todoMsg)
+    const [isTodoEditable,setIsTodoEditable] = useState(false)
     
     
     const {checkboxFlip , deleteTodo , updateTodo } = useTodo()
