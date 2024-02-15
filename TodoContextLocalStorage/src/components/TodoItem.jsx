@@ -1,34 +1,41 @@
 import { useState } from "react";
 import { useTodo } from "../context/TodoContext";
 
-function TodoItem({ todoMsg }) {
-    const [todoMsg , setTodoMsg] = useState(todoMsg.todoMsg)
+function TodoItem({ todo }) {
+    // each object in todoArray is named here as todo 
+    // this concept is started from App.jsx file each todo required for loop
+    const [todoMsg , setTodoMsg] = useState(todo.todoMsg)
     const [isTodoEditable,setIsTodoEditable] = useState(false)
+    const {checkboxFlip , deleteTodo , updateTodo } = useTodo()
 
     const editTodo = ()=>{
-        
+        updateTodo(todo.id, {...todo, todoMsg:todoMsg})
+        setIsTodoEditable(false)
+
+    }
+    const checkboxChecked = ()=>{
+        checkboxFlip(todo.id)
     }
     
     
-    const {checkboxFlip , deleteTodo , updateTodo } = useTodo()
 
     return (
         <div
             className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
-                checkbox ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
+                todo.checkbox ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
             }`}
         >
             <input
                 type="checkbox"
                 className="cursor-pointer"
-                checked={todoMsg.checkbox}
+                checked={todo.checkbox}
                 onChange={checkboxFlip}
             />
             <input
                 type="text"
                 className={`border outline-none w-full bg-transparent rounded-lg ${
                     isTodoEditable ? "border-black/10 px-2" : "border-transparent"
-                } ${todoMsg.checkbox ? "line-through" : ""}`}
+                } ${todo.checkbox ? "line-through" : ""}`}
                 value={todoMsg}
                 onChange={(e) => setTodoMsg(e.target.value)}
                 readOnly={!isTodoEditable}
@@ -37,20 +44,20 @@ function TodoItem({ todoMsg }) {
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
                 onClick={() => {
-                    if (todoMsg.checkbox) return;
+                    if (todo.checkbox) return;
 
                     if (isTodoEditable) {
                         editTodo();
                     } else setIsTodoEditable((prev) => !prev);
                 }}
-                disabled={todoMsg.checkbox}
+                disabled={todo.checkbox}
             >
                 {isTodoEditable ? "📁" : "✏️"}
             </button>
             {/* Delete todoMsg Button */}
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
-                onClick={() => deleteTodo(todoMsg.id)}
+                onClick={() => deleteTodo(todo.id)}
             >
                 ❌
             </button>
