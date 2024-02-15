@@ -51,6 +51,7 @@ function App() {
                             <TodoItem todo ={todo}/>
                           </div>
                         ))}
+                        
                     </div>
                 </div>
             </div>
