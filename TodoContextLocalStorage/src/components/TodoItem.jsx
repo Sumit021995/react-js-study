@@ -29,7 +29,7 @@ function TodoItem({ todo }) {
                 type="checkbox"
                 className="cursor-pointer"
                 checked={todo.checkbox}
-                onChange={checkboxFlip}
+                onChange={checkboxChecked}
             />
             <input
                 type="text"
