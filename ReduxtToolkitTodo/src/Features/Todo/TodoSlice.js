@@ -5,5 +5,5 @@ const initialStage = {
 }
 
 export const todoSlice = createSlice({
-    name : ''
+    name : 'todo'
 })
