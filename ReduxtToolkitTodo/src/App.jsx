@@ -7,7 +7,7 @@ function App() {
 
   return (
    <div>
-    <h1>Redux -React Study Project</h1>
+    <h1>Redux -React Study Project (Redux Toolkit)</h1>
    </div>
   )
 }
