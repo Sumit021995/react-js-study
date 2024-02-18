@@ -1,3 +1,5 @@
 import { createSlice , nanoid } from "@reduxjs/toolkit";
 
-const initialStage =
+const initialStage = {
+    todos: [{id:1,todo:"Hello World"}]
+}
