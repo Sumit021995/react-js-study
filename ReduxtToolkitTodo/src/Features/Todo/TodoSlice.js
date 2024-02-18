@@ -4,4 +4,6 @@ const initialStage = {
     todos: [{id:1,todo:"Hello World"}]
 }
 
-export const todoSlice = 
+export const todoSlice = createSlice({
+    
+})
