@@ -13,7 +13,7 @@ export const todoSlice = createSlice({
         addTodo : (state , action)=>{
             const newTodo = {
                 id: nanoid(),
-                text:
+                text: "Hello World",
             }
         },
         removeTodo : ()=>{}
