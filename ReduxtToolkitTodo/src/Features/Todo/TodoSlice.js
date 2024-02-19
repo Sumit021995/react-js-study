@@ -17,6 +17,6 @@ export const todoSlice = createSlice({
             }
             state.todos.push(newTodo) 
         },
-        removeTodo : ()=>{}
+        removeTodo : (state ,action)=>{}
     }
 })
