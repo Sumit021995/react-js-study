@@ -4,8 +4,13 @@ const initialStage = {
     todos: [{id:1,todo:"Hello World"}]
 }
 
+
+
 export const todoSlice = createSlice({
     name : 'todo',
     initialState,
-    reducers:
+    reducers: {
+        addTodo : ()=>{},
+        removeTodo : ()=>{}
+    }
 })
