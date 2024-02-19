@@ -10,7 +10,12 @@ export const todoSlice = createSlice({
     name : 'todo',
     initialState,
     reducers: {
-        addTodo : (state , action)=>{},
+        addTodo : (state , action)=>{
+            const newTodo = {
+                id: nanoid(),
+                todo
+            }
+        },
         removeTodo : ()=>{}
     }
 })
