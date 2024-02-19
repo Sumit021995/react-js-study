@@ -8,13 +8,14 @@ const initialStage = {
 
 export const todoSlice = createSlice({
     name : 'todo',
-    initialState,
+    initialState ,
     reducers: {
         addTodo : (state , action)=>{
             const newTodo = {
                 id: nanoid(),
-                text: "Hello World",
+                text: action.payload,
             }
+            state.todos.push(newTodo) 
         },
         removeTodo : ()=>{}
     }
