@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import TodoSlice from '../Features/Todo/TodoSlice'
 
 function AddTodo() {
 
   const [input , setInput] = useState("")
-  
+  const {AddTodo , } = TodoSlice
 
   const addTodoHandler = ()=>{
 
