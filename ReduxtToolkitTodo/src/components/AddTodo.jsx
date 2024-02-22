@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 function AddTodo() {
 
-  const [input , setInput] = useState()
+  const [input , setInput] = useState("")
   return (
     <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
       <input
