@@ -4,10 +4,10 @@ import TodoSlice from '../Features/Todo/TodoSlice'
 function AddTodo() {
 
   const [input , setInput] = useState("")
-  const {AddTodo} = TodoSlice()
+  const {addTodo} = TodoSlice()
 
   const addTodoHandler = ()=>{
-
+    addTodo
   }
   return (
     <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
