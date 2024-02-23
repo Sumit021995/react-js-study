@@ -5,7 +5,7 @@ import { UseDispatch } from 'react-redux'
 function AddTodo() {
 
   const [input , setInput] = useState("")
-  const {addTodo} = TodoSlice()
+  
 
   const addTodoHandler = ()=>{
     addTodo
