@@ -4,7 +4,7 @@ import TodoSlice from '../Features/Todo/TodoSlice'
 function AddTodo() {
 
   const [input , setInput] = useState("")
-  const {AddTodo , } = TodoSlice
+  const {AddTodo} = TodoSlice()
 
   const addTodoHandler = ()=>{
 
