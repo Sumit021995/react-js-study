@@ -4,7 +4,7 @@ import { removeTodo } from '../Features/Todo/TodoSlice'
 
 function Todos() {
   const dispatch = useDispatch()
-  
+  useSelector()
 
   return (
     <>
