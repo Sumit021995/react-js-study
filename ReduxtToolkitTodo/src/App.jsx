@@ -1,14 +1,17 @@
 import { useState } from 'react'
 
 import './App.css'
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
 
 function App() {
   
 
   return (
-   <div>
-    <h1>Redux -React Study Project (Redux Toolkit)</h1>
-   </div>
+   <>
+    <AddTodo/>
+    <Todos/>
+   </>
   )
 }
 
