@@ -10,7 +10,8 @@ function AddTodo() {
   
 
 
-  const addTodoHandler = ()=>{
+  const addTodoHandler = (e)=>{
+    e.preventDefault()
     dispatch(addTodo(input))
     setInput("")
   }
