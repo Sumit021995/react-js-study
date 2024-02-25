@@ -7,7 +7,7 @@ function Todos() {
   const todos = useSelector((state)=>state.todos)
 
   return (
-    <>
+    <div className='justify-center'>
     <div>Todos</div>
     <ul className="list-none">
         {todos.map((todo) => (
@@ -38,7 +38,7 @@ function Todos() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   )
 }
 
