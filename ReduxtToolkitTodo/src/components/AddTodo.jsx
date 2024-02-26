@@ -14,6 +14,17 @@ function AddTodo() {
     
   // },[])
 
+  useEffect(()=>{
+    const input = JSON.parse(localStorage.getItem("todos"))
+    if(input && input.length > 0){
+      setInput(input)
+    }
+  },[])
+
+  useEffect(()=>{
+    localStorage.setItem("todos",JSON.stringify(input))
+  },[input])
+
   const addTodoHandler = (e)=>{
     e.preventDefault()
     dispatch(addTodo(input))

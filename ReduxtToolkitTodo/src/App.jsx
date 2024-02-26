@@ -1,6 +1,7 @@
-// import { useEffect , useState } from 'react'
+import { useEffect , useState } from 'react'
 import AddTodo from './components/AddTodo'
 import Todos from './components/Todos'
+import { Provider } from 'react-redux'
 // import { useSelector , useDispatch} from 'react-redux'
 // import { addTodo } from './Features/Todo/TodoSlice'
 
