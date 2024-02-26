@@ -1,21 +1,25 @@
-import { useEffect , useState } from 'react'
+// import { useEffect , useState } from 'react'
 import AddTodo from './components/AddTodo'
 import Todos from './components/Todos'
-import { useSelector , useDispatch} from 'react-redux'
-import { addTodo } from './Features/Todo/TodoSlice'
+// import { useSelector , useDispatch} from 'react-redux'
+// import { addTodo } from './Features/Todo/TodoSlice'
 
 function App() {
-  const [myTodo, setMyTodo] = useState([])
-  const todos = useSelector(state => state.todos)
-  const dispatch = useDispatch()
+  // const [myTodo , setMyTodo] = useState([])
+  // const todos = useSelector(state => state.todos)
+  // const dispatch = useDispatch()
 
-  
-  useEffect(()=>{
-    const allTodos = JSON.parse(localStorage.getItem("todos"))
-    if(allTodos && allTodos.length > 0){
-      dispatch(addTodo(allTodos))
-    }
-  })
+
+  // useEffect(()=>{
+  //   const myTodo = JSON.parse(localStorage.getItem("todos"))
+  //   if(myTodo && myTodo.length > 0){
+  //     setMyTodo(myTodo)
+  //   }
+  // },[])
+
+  // useEffect(()=>{
+  //   localStorage.setItem("todos",JSON.stringify(myTodo))
+  // },[myTodo])
 
   return (
    <>
