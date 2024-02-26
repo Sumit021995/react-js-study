@@ -18,6 +18,7 @@ function AddTodo() {
     const input = JSON.parse(localStorage.getItem("todos"))
     if(input && input.length > 0){
       setInput(input)
+      
     }
   },[])
 
