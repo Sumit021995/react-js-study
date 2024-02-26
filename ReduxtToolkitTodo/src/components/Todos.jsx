@@ -1,10 +1,13 @@
 
 import { useDispatch,useSelector} from 'react-redux'
 import { removeTodo } from '../Features/Todo/TodoSlice'
+// import { useEffect } from 'react'
 
 function Todos() {
   const dispatch = useDispatch()
   const todos = useSelector((state)=>state.todos)
+
+  
 
   return (
     <>
