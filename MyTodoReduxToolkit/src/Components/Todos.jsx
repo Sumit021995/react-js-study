@@ -8,8 +8,9 @@ function Todos() {
     const todos = useSelector((state) => state.todos)
 
     const updateTodoHandler = ()=>{
-        dispatch(updateTodo(text)
-        
+        dispatch(updateTodo(text))
+        setText("")
+
     }
 
 
@@ -18,7 +19,9 @@ function Todos() {
         <h1>My Todos List</h1>
         <ul>
             <li>
-            <div key={todos.key}>
+            <div key={todos.key} 
+            value={todos.text}
+            >
             <button className=''
              onClick={updateTodoHandler}
             >Update</button>
