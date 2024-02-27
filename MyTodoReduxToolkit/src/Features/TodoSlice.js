@@ -24,7 +24,9 @@ export const TodoSlice = createSlice({
 
         },
         updateTodo:(state,action)=>{
-            state.todos = 
+            if(state.todos.id === action.payload){
+                state.todos.text = action.payload.text
+            }
         }
     }
 })
