@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { removeTodo , updateTodo } from '../Features/TodoSlice'
 
 function Todos() {
     const dispatch = useDispatch()
@@ -9,9 +10,11 @@ function Todos() {
   return (
     <div>
         <h1>My Todos List</h1>
-        {todos.map(()=>{
-            
+        <li>
+        {todos.map((singleTodo)=>{
+            singleTodo
         })}
+        </li>
       
     </div>
   )
