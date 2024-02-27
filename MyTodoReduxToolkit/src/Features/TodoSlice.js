@@ -4,7 +4,7 @@ import { createSlice , nanoid } from "@reduxjs/toolkit";
 export const initialState = {
     todos:[{
         id:1,
-        text:"Learn React Fully"
+        text:"Learn React First"
     }]
 }
 
@@ -30,3 +30,7 @@ export const TodoSlice = createSlice({
         }
     }
 })
+
+export const {addTodo,removeTodo,updateTodo} = TodoSlice.actions
+
+export const TodoReducer = TodoSlice.reducer
