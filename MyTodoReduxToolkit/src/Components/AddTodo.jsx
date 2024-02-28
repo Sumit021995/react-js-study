@@ -17,17 +17,14 @@ function AddTodo() {
 
   return (
     <div>
-        <form>
+        <form onSubmit={addTodoHandler}>
         <input
         type='text'
         placeholder='Enter Your Todo Message'
         value={input}
         onChange={(e)=>setInput(e.target.value)}
-        isEditable = 
-
-        ></input>
-        <button
-        onClick={addTodoHandler}
+        />
+        <button type='submit'
         >Add Todo</button>
         </form>
       

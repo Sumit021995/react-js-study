@@ -11,6 +11,7 @@ function Todos() {
     const updateTodoHandler = ()=>{
         dispatch(updateTodo(text))
         setText("")
+        setIsEditable(false)
 
     }
 
@@ -20,11 +21,19 @@ function Todos() {
         <h1>My Todos List</h1>
         <ul className=''>{todos.map((singleTodo=>{
             <li key={singleTodo.id}>
-                <div>{singleTodo.text}</div>
+                <div readOnly={!isEditable}>{singleTodo.text}</div>
                 <button onClick={() => dispatch(removeTodo(singleTodo.id))}>X</button>
                 <button 
-                onClick={updateTodoHandler}
-                readOnly ={!isEditable}
+                onClick={()=> {
+                    if (todos.isEditable) return
+                    if(isEditable){
+                        updateTodoHandler()
+                    }
+
+
+                }
+                }
+                
                 >Update</button>
             </li>
         }))}
