@@ -23,6 +23,7 @@ function AddTodo() {
         placeholder='Enter Your Todo Message'
         value={input}
         onChange={(e)=>setInput(e.target.value)}
+        isEditable = 
 
         ></input>
         <button

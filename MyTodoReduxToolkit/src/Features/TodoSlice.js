@@ -15,7 +15,8 @@ export const TodoSlice = createSlice({
         addTodo:(state,action)=>{
             const newTodo = {
                 id:nanoid(),
-                text:action.payload
+                text:action.payload,
+                isEditable: false
             }
             state.todos.push(newTodo)
         },

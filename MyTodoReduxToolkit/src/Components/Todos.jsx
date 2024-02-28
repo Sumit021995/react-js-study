@@ -4,6 +4,7 @@ import { removeTodo , updateTodo } from '../Features/TodoSlice'
 
 function Todos() {
     const [text , setText] = React.useState("")
+    const [isEditable , setIsEditable]= React.useState(false)
     const dispatch = useDispatch()
     const todos = useSelector((state) => state.todos)
 
