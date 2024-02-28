@@ -18,20 +18,24 @@ function Todos() {
   return (
     <div>
         <h1>My Todos List</h1>
-        <ul>
-            <li>
-            <div key={todos.key} 
-            value={todos.text}
-            >
-            <button className=''
-             onClick={updateTodoHandler}
-            >Update</button>
-            <button className=''
-
-            >X</button>
-            </div>
-                
+        <ul className=''>{todos.map((singleTodo=>{
+            <li key={singleTodo.id}>
+                <div>{singleTodo.text}</div>
+                <button onClick={() => dispatch(removeTodo(singleTodo.id))}>X</button>
+                <button 
+                onClick={updateTodoHandler}
+                readOnly ={!isEditable}
+                >Update</button>
             </li>
+        }))}
+
+            
+            
+            
+            
+            
+                
+            
         </ul>
     </div>
   )
