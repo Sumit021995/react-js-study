@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux'
-import {removeTodo} from '../features/todo/todoSlice'
+import {removeTodo , updateTodo} from '../features/todo/todoSlice'
 
 function Todos() {
     const [isTodoEditable, setIsTodoEditable] = useState(false)
@@ -32,7 +32,13 @@ function Todos() {
             />
             <button 
             className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
-            onClick={()=>}
+            onClick={() => {
+                  if (todo.completed) return;
+
+                  if (isTodoEditable) {
+                      editTodo();
+                  } else setIsTodoEditable((prev) => !prev);
+              }}
             
             >Update</button>
             <button
