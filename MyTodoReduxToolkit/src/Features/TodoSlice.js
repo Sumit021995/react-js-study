@@ -23,6 +23,10 @@ export const TodoSlice = createSlice({
         removeTodo:(state,action)=>{
             state.todos = state.todos.filter((items)=>items.id !== action.payload)
 
+        },
+        updateTodo:(state,action)=>{
+            const oldTodo = state.todos.filter((eachTodo)=>eachTodo.id === action.payload)
+            oldTodo.text = action.payload
         }
         
     }
