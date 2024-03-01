@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux'
-import {removeTodo , updateTodo} from '../features/todo/todoSlice'
+import {removeTodo , updateTodo} from '../Features/TodoSlice'
+import { useState } from 'react'
 
-function Todos() {
+function Todos({todo}) {
     const [isTodoEditable, setIsTodoEditable] = useState(false)
-    const [todoText , setTodoText]=(todos.text)
-    const todos = useSelector(state => state.todos)
+    const [todoText , setTodoText]=(todo.text)
+    // const todos = useSelector(state => state.todos)
     const dispatch = useDispatch()
 
     // const updateTodoHandler = ()=>{
@@ -12,28 +13,30 @@ function Todos() {
 
     //     ))
     // }
+    const editTodo = ()=>{
+        dispatch(updateTodo(todoText))
+        setIsTodoEditable(false)
+    }
 
   return (
     <>
     <div>Todos</div>
     <ul className="list-none">
-        {todos.map((todo) => (
+        
           <li
             className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
             key={todo.id} 
           >
-            <input 
+            {/* <input 
             type='text' 
             className='text-white' 
             value={todoText}
             onChange={(e)=>setTodoText(e.target.value)}
             readOnly={!isTodoEditable}
-            />
+            /> */}
             <button 
             className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
             onClick={() => {
-                  if (todo.completed) return;
-
                   if (isTodoEditable) {
                       editTodo();
                   } else setIsTodoEditable((prev) => !prev);
@@ -60,7 +63,7 @@ function Todos() {
               </svg>
             </button>
           </li>
-        ))}
+        
       </ul>
     </>
   )

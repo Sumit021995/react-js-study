@@ -24,10 +24,10 @@ export const TodoSlice = createSlice({
             state.todos = state.todos.filter((items)=>items.id !== action.payload)
 
         },
-        updateTodo:(state,action)=>{
-            const oldTodo = state.todos.filter((eachTodo)=>eachTodo.id === action.payload)
-            oldTodo.text = action.payload
-        }
+        updateTodo: (state , action) => {
+            state.todos = state.todos.map((prevTodo)=>(prevTodo.id === action.payload ? action.payload.text : prevTodo))
+        
+          }
         
     }
     
