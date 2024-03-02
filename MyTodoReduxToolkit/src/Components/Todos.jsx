@@ -27,13 +27,13 @@ function Todos({todo}) {
             className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
             key={todo.id} 
           >
-            {/* <input 
+            <input 
             type='text' 
             className='text-white' 
             value={todoText}
             onChange={(e)=>setTodoText(e.target.value)}
             readOnly={!isTodoEditable}
-            /> */}
+            />
             <button 
             className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
             onClick={() => {
