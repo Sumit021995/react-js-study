@@ -6,7 +6,14 @@ import { updateTodo } from '../Features/TodoSlice'
 function Todos() {
     const [text , setText]=React.useState("")
     const todos = useSelector(state => state.todos)
+    const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
+    const updateTodoHandler = (e)=>{
+      e.preventDefault()
+
+    }
+
+
 
   return (
     <>
@@ -17,12 +24,16 @@ function Todos() {
             className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
             key={todo.id}
           >
-            <div className='text-white'>{todo.text}</div>
+            <input
+              type='text'
+              key={todo.id}
+              value={text}
+              onChange={(e)=>setText(e.target.value)}
+              readOnly={!isEditable}
+            />
             <button 
             type='submit'
-            onChange={()=>{ dispatch(updateTodo(text))
-              setText("")
-            }}
+            onClick={updateTodoHandler}
             className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
             >Update</button>
             <button
