@@ -5,14 +5,16 @@ import { updateTodo } from '../Features/TodoSlice'
 
 function Todos() {
   const todos = useSelector(state => state.todos)
-  const todoMsg = todos.map((todo)=>todo.text)
-  const [text , setText]=React.useState(todoMsg)
+  // const todoMsg = todos.map((todo)=>todo.text)
+  let [text , setText]=React.useState("")
     const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
     const updateTodoHandler = (e)=>{
       e.preventDefault()
       setIsEditable(!isEditable)
       dispatch(updateTodo(text))
+      setText("")
+      setIsEditable(!isEditable)
 
     }
 
@@ -29,7 +31,6 @@ function Todos() {
           >
             <input
               type='text'
-              key={todo.id}
               value={text}
               onChange={(e)=>setText(e.target.value)}
               readOnly={!isEditable}
