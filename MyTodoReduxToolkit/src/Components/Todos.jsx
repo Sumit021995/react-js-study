@@ -4,12 +4,15 @@ import {removeTodo} from '../Features/TodoSlice'
 import { updateTodo } from '../Features/TodoSlice'
 
 function Todos() {
-    const [text , setText]=React.useState("")
-    const todos = useSelector(state => state.todos)
+  const todos = useSelector(state => state.todos)
+  const todoMsg = todos.map((todo)=>todo.text)
+  const [text , setText]=React.useState(todoMsg)
     const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
     const updateTodoHandler = (e)=>{
       e.preventDefault()
+      setIsEditable(!isEditable)
+      dispatch(updateTodo(text))
 
     }
 
