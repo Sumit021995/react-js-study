@@ -31,7 +31,7 @@ function Todos() {
           >
             <input
               type='text'
-              value={text}
+              value={todo.text}
               onChange={(e)=>setText(e.target.value)}
               readOnly={!isEditable}
             />
