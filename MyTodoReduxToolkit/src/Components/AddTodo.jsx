@@ -25,6 +25,7 @@ function AddTodo() {
         onChange={(e)=>setInput(e.target.value)}
         />
         <button type='submit'
+        className='text-white'
         >Add Todo</button>
         </form>
       

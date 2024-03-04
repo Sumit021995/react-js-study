@@ -9,12 +9,12 @@ function Todos({todo}) {
   let [text , setText]=React.useState(todo.text)
     const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
-    const updateTodoHandler = ()=>{
-      dispatch(updateTodo(text))
-      // setText("")
-      setIsEditable(false)
+    // const updateTodoHandler = ()=>{
+    //   dispatch(updateTodo(text))
+    //   // setText("")
+    //   setIsEditable(false)
 
-    }
+    // }
   //   const editTodo =()=>{
   //     updatedTodo(todo.id , {...todo,text:todoMsg})
   //     setIsTodoEditable(false)
@@ -42,7 +42,8 @@ function Todos({todo}) {
                 onClick={(e) => {
                       e.preventDefault()
                     if (isEditable) {
-                        updateTodoHandler();
+                        dispatch(updateTodo(todo.id,text))
+                        setText("")
                     } else setIsEditable((prev) => !prev);
                 }}
               
