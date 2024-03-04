@@ -15,7 +15,8 @@ export const TodoSlice = createSlice({
         addTodo:(state,action)=>{
             const todo = {
                 id:nanoid(),
-                text:action.payload
+                text:action.payload,
+                editable:false
             }
             state.todos.push(todo)
         },
@@ -23,15 +24,15 @@ export const TodoSlice = createSlice({
             state.todos = state.todos.filter((items)=>items.id !== action.payload)
 
         },
-        updateTodo: (state , action) => {
-            state.todos = state.todos.map((prevTodo)=>(prevTodo.id === action.payload ? action.payload.text : prevTodo))
-        
-          }
-        
-    }
-    
+        updateTodo: (state , action ) => {
+            state.todos.map((prevTodo)=> (prevTodo.id === action.payload ? prevTodo.text=action.payload.text:prev)
+                
+            }}
+           
 })
 
 export const {addTodo,removeTodo,updateTodo} = TodoSlice.actions
 
 export default TodoSlice.reducer
+
+// export const todos = state.todos
