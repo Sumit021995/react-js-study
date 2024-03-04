@@ -6,7 +6,7 @@ import { updateTodo } from '../Features/TodoSlice'
 function Todos() {
   const todos = useSelector(state => state.todos)
   // const todoMsg = todos.map((todo)=>todo.text)
-  let [text , setText]=React.useState(todos.map((todo)=>todo.text))
+  let [text , setText]=React.useState(todos.)
     const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
     const updateTodoHandler = (e)=>{
