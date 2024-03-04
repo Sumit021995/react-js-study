@@ -13,11 +13,11 @@ export const TodoSlice = createSlice({
     initialState,
     reducers:{
         addTodo:(state,action)=>{
-            const newTodo = {
+            const todo = {
                 id:nanoid(),
                 text:action.payload
             }
-            state.todos.push(newTodo)
+            state.todos.push(todo)
         },
         removeTodo:(state,action)=>{
             state.todos = state.todos.filter((items)=>items.id !== action.payload)

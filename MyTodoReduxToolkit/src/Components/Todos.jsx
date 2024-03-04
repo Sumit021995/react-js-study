@@ -3,10 +3,10 @@ import { useSelector, useDispatch } from 'react-redux'
 import {removeTodo} from '../Features/TodoSlice'
 import { updateTodo } from '../Features/TodoSlice'
 
-function Todos() {
-  const todos = useSelector(state => state.todos)
+function Todos({todo}) {
+  // const todos = useSelector(state => state.todos)
   // const todoMsg = todos.map((todo)=>todo.text)
-  let [text , setText]=React.useState(todos.)
+  let [text , setText]=React.useState(todo.text)
     const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
     const updateTodoHandler = (e)=>{
@@ -31,13 +31,13 @@ function Todos() {
           >
             <input
               type='text'
-              value={text}
+              value={todo.text}
               onChange={(e)=>setText(e.target.value)}
               readOnly={!isEditable}
             />
             <button 
             type='submit'
-            onClick={updateTodoHandler}
+            onClick={()=> updateTodoHandler}
             className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
             >Update</button>
             <button
