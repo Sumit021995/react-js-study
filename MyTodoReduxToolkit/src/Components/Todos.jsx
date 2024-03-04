@@ -37,8 +37,9 @@ function Todos({todo}) {
             />
             {/* Edit, Save Button */}
             <button
+                type='submit'
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
-                onSubmit={(e) => {
+                onClick={(e) => {
                       e.preventDefault()
                     if (isEditable) {
                         updateTodoHandler();
@@ -51,7 +52,7 @@ function Todos({todo}) {
             {/* Delete Todo Button */}
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
-                onClick={() => removeTodo(todo.id)}
+                onClick={() => dispatch(removeTodo(todo.id))}
             >
                 ❌
             </button>
