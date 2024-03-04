@@ -15,8 +15,8 @@ export const TodoSlice = createSlice({
         addTodo:(state,action)=>{
             const todo = {
                 id:nanoid(),
-                text:action.payload,
-                editable:false
+                text:action.payload
+                
             }
             state.todos.push(todo)
         },
@@ -25,8 +25,8 @@ export const TodoSlice = createSlice({
 
         },
         updateTodo: (state , action ) => {
-            state.todos.map((prevTodo)=> (prevTodo.id === action.payload ? prevTodo.text=action.payload.text:prev)
-                
+            state.todos.map((prevTodo)=> (prevTodo.id === action.payload ? prevTodo.text = action.payload.text : prevTodo.text =`${prevTodo.text}`))
+                return state.todos
             }}
            
 })

@@ -9,16 +9,16 @@ function Todos({todo}) {
   let [text , setText]=React.useState(todo.text)
     const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
-    const updateTodoHandler = (id,text)=>{
-      dispatch(updateTodo(id,text))
-      setText("")
+    const updateTodoHandler = ()=>{
+      dispatch(updateTodo(text))
+      // setText("")
       setIsEditable(false)
 
     }
-    const editTodo =()=>{
-      updatedTodo(todo.id , {...todo,text:todoMsg})
-      setIsTodoEditable(false)
-  }
+  //   const editTodo =()=>{
+  //     updatedTodo(todo.id , {...todo,text:todoMsg})
+  //     setIsTodoEditable(false)
+  // }
 
 
 
@@ -27,6 +27,7 @@ function Todos({todo}) {
     <div>
     <input
                 type="text"
+                key={todo.id}
                 // className={`border outline-none w-full bg-transparent rounded-lg ${
                 //     isTodoEditable ? "border-black/10 px-2" : "border-transparent"
                 // } ${todo.completed ? "line-through" : ""}`}
@@ -37,14 +38,13 @@ function Todos({todo}) {
             {/* Edit, Save Button */}
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
-                onClick={() => {
-                    if (todo.editable) return;
-
+                onSubmit={(e) => {
+                      e.preventDefault()
                     if (isEditable) {
                         updateTodoHandler();
                     } else setIsEditable((prev) => !prev);
                 }}
-                disabled={todo.editable}
+              
             >
                 {isEditable ? "📁" : "✏️"}
             </button>
