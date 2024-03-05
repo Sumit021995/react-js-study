@@ -17,9 +17,9 @@ function AddTodo() {
 
   return (
     <div>
-        <form onSubmit={addTodoHandler} className='w-full'>
+        <form onSubmit={addTodoHandler}>
         <input
-        className='rounded-s-sm '
+        className='rounded-s-sm w-2/3 '
         type='text'
         placeholder='Enter Your Todo Message'
         value={input}
@@ -27,7 +27,7 @@ function AddTodo() {
         />
         <button type='submit'
         className='text-white bg-red-600 rounded-e-sm '
-        > Add Todo </button>
+        > <pre> Add Todo </pre> </button>
         </form>
       
     </div>
