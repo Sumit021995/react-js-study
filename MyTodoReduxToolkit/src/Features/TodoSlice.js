@@ -26,7 +26,6 @@ export const TodoSlice = createSlice({
         },
         updateTodo: (state , action) => {
             state.todos.map((prevTodo)=> (prevTodo.id === action.payload.id ? prevTodo.text = action.payload.text : prevTodo.text =`${prevTodo.text}`))
-                return state.todos
             }}
            
 })

@@ -42,6 +42,7 @@ function Todos({todo}) {
                 onClick={() => {
                     if (isEditable) {
                         dispatch(updateTodo(todo.id,text))
+                        setIsEditable((prev) => !prev)
                         
                     } else setIsEditable((prev) => !prev);
                 }}
