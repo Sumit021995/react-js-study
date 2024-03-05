@@ -20,7 +20,7 @@ function Todos({todo}) {
     }, [])
   
     useEffect(() => {
-      localStorage.setItem("todo", JSON.stringify(allTodos))
+      localStorage.setItem("allTodos", JSON.stringify(allTodos))
     }, [allTodos])
 
    
