@@ -10,6 +10,18 @@ function Todos({todo}) {
     const [isEditable,setIsEditable]=React.useState(false)
     const dispatch = useDispatch()
 
+    useEffect(() => {
+      const allTodos = JSON.parse(localStorage.getItem("todos"))
+  
+      if (todos && todos.length > 0) {
+        setAllTodos(allTodos)
+      }
+    }, [])
+  
+    useEffect(() => {
+      localStorage.setItem("todos", JSON.stringify(allTodos))
+    }, [allTodos])
+
    
 
 
