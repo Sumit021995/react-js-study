@@ -34,4 +34,3 @@ export const {addTodo,removeTodo,updateTodo} = TodoSlice.actions
 
 export default TodoSlice.reducer
 
-// export const todos = state.todos
