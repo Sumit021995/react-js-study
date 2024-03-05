@@ -19,13 +19,14 @@ function AddTodo() {
     <div>
         <form onSubmit={addTodoHandler}>
         <input
+        className='rounded-s-sm items-center'
         type='text'
         placeholder='Enter Your Todo Message'
         value={input}
         onChange={(e)=>setInput(e.target.value)}
         />
         <button type='submit'
-        className='text-white'
+        className='text-white bg-red-600 rounded-e-sm'
         >Add Todo</button>
         </form>
       
