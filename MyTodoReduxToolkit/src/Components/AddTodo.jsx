@@ -19,7 +19,7 @@ function AddTodo() {
     <div>
         <form onSubmit={addTodoHandler}>
         <input
-        className='rounded-s-sm items-center'
+        className='rounded-s-sm'
         type='text'
         placeholder='Enter Your Todo Message'
         value={input}

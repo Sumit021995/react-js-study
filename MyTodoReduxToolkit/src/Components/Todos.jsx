@@ -16,7 +16,7 @@ function Todos({todo}) {
 
   return (
     <>
-    <div>
+    <div className='item-center'>
     <input
                 type="text"
                 key={todo.id}
