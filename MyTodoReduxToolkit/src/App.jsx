@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux'
-import './App.css'
 // import { addTodo , updateTodo , removeTodo } from './Features/TodoSlice'
 import Todos from './Components/Todos'
 import AddTodo from "./Components/AddTodo"
