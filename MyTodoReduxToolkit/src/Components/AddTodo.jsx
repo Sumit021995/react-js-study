@@ -27,7 +27,7 @@ function AddTodo() {
         />
         <button type='submit'
         className='text-white bg-red-600 rounded-e-sm'
-        >Add Todo</button>
+        > Add Todo </button>
         </form>
       
     </div>
