@@ -16,14 +16,14 @@ function Todos({todo}) {
 
   return (
     <>
-    <div className='flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-white'>
+    <div className='flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-md shadow-white/50 duration-300  text-white'>
     <input
                 type="text"
                 key={todo.id}
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 readOnly={!isEditable}
-                className='border outline-none w-full bg-transparent rounded-lg'
+                className='border outline-none  w-full text-black rounded-lg'
             />
             {/* Edit, Save Button */}
             <button
