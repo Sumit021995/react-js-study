@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import Todos from './Components/Todos'
 import AddTodo from "./Components/AddTodo"
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 
 
 function App() {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import {removeTodo} from '../Features/TodoSlice'
 import { updateTodo } from '../Features/TodoSlice'
@@ -6,20 +6,21 @@ import { updateTodo } from '../Features/TodoSlice'
 function Todos({todo}) {
   // const todos = useSelector(state => state.todos)
   // const todoMsg = todos.map((todo)=>todo.text)
-  let [text , setText]=React.useState(todo.text)
-    const [isEditable,setIsEditable]=React.useState(false)
+  let [text , setText]=useState(todo.text)
+    const [isEditable,setIsEditable]=useState(false)
     const dispatch = useDispatch()
+    const [allTodos,setAllTodos]=useState([todo])
 
     useEffect(() => {
-      const allTodos = JSON.parse(localStorage.getItem("todos"))
+      const allTodos = JSON.parse(localStorage.getItem("allTodos"))
   
-      if (todos && todos.length > 0) {
+      if (allTodos && allTodos.length > 0) {
         setAllTodos(allTodos)
       }
     }, [])
   
     useEffect(() => {
-      localStorage.setItem("todos", JSON.stringify(allTodos))
+      localStorage.setItem("todo", JSON.stringify(allTodos))
     }, [allTodos])
 
    
