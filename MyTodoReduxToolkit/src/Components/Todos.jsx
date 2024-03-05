@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import {removeTodo} from '../Features/TodoSlice'
 import { updateTodo } from '../Features/TodoSlice'
 
@@ -28,9 +28,6 @@ function Todos({todo}) {
     <input
                 type="text"
                 key={todo.id}
-                // className={`border outline-none w-full bg-transparent rounded-lg ${
-                //     isTodoEditable ? "border-black/10 px-2" : "border-transparent"
-                // } ${todo.completed ? "line-through" : ""}`}
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 readOnly={!isEditable}
