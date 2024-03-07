@@ -17,3 +17,4 @@
 
 // above code is by appwrite sign up 
 
+import configVariable from "../configVariables/configVariable";
