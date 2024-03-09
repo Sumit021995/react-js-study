@@ -18,3 +18,8 @@
 // above code is by appwrite sign up 
 
 import configVariable from "../configVariables/configVariable";
+import { Client, Account, ID } from "appwrite";
+
+export class AuthService {}
+
+export default AuthService;
